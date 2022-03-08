@@ -1,0 +1,78 @@
+﻿* {
+    /*Every webpage created should start with this - SRC: GITHUB TUTORIAL*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    text-decoration: inherit;
+    line-height: inherit;
+    color: inherit;
+}
+
+body, html {
+    /*    
+    background-color: darkblue;
+    color: ghostwhite;
+    */
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+    line-height:30px;
+    color:#444; /*tip: easier to read on white */
+    height: 100%;
+}
+
+body{
+    text-align:center;
+}
+
+h1{
+    font-size:36px;
+    line-height:50px;
+    font-weight:bold;
+}
+
+
+
+/*Home
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/banner.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    color: ghostwhite;
+    text-align: center;
+}
+
+.contactBTN{
+    background-color:limegreen;
+    color:ghostwhite;
+}
+
+*/
+
+/*Introduction
+
+ #profileImg2{
+    border-radius:20px;
+}
+
+.introRow {
+    display: flex;
+}
+
+.introCol {
+    flex: 50%;
+}
+*/
+
+
+.introHeadshot > img {
+    border-radius: 50%;
+}

@@ -1,48 +1,165 @@
 ﻿<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset = "utf-8">
-		<title>Kenny Tran's Programmer Portfolio</title>
-		<link rel="stylesheet" type="text/css" href="mystylesheet.css">
-	</head>
+<head>
+    <meta charset="utf-8">
+    <!--Functions properly on mobile phones and tablets-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Kenny's Domain</title>
 
-	<body>
-		<!--HOME-->
-		<div class="homeDiv">
-			<div class="menuBar">
-				<span><a href="default.asp">Home</a></span>
-				<span><a href="introduction.asp">Introduction</a></span>
-				<span><a href="portfolio.asp">Portfolio</a></span>
-				<span><button id="contactBTN" type="button">Say Hi!</button></span>
-			</div>
+    <!--Normalize: Evens out all the differences between diff browsers-->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
 
-			<!--Banner-->
-			<div class="banner">
-				<h1> &lt Hello World &gt </h1>
-				<!--<img src="images/banner.jpg" alt="Banner Image"/>-->
-				<h1>I'm Kenny Tran</h1>
-				<p>Junior Full Stack Developer</p>
-			</div>
-		</div>
+    <!--Access to brand fonts from font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+          integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-		<!--About Me-->
-		<div class="introRow">
-			<div class="introCol">
-				<img src="images/profile img.jpg"/>
-			</div>
-			<div class="introCol">
-				<h2>Allow Me To Introduce Myself...</h2>
-				<p>I am a Junior Full-Stack Developer and a self-proclaimed Digital Journeyman who is looking to break into the world of programming. I hope to creat</p>
-				<p>One of my passions is visual arts. Bringing eye-catching aethestics that harmoniously mix with an . It is never-ending to improve. In the words of Austin Kleon, one must be able to "steal like an artist" to create your own art and message. <p>
-				<p></p>
-			</div>
+    <!--Access to google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
 
-		</div>
+    <!--Link to css style sheet-->
+    <link rel="stylesheet" href="stylesheet2.0.css" />
 
-		<!--Portfolio-->
-		<div class="portfolio">
+    <!--<link rel="stylesheet" type="text/css" href="mystylesheet.css" />-->
+</head>
 
-		</div>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/devjane.png" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
 
-	</body>
+    <!--Insert Hello World interactivity here or create a welcome page does it.  -->
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            My name is <strong>Kenny Tran</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">jr full-stack dev</p>
+        <img src="images/profile img.jpg" alt="a picture of Kenny Tran sitting" class="intro__img">
+    </section>
+
+
+    <!-- My services -->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">What I do</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Design + Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div> <!-- / service -->
+
+            <div class="service">
+                <h3>E-Commerce</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div> <!-- / service -->
+
+            <div class="service">
+                <h3>WordPress</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div> <!-- / service -->
+        </div> <!-- / services -->
+
+        <a href="#work" class="btn">My Work</a>
+    </section>
+
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">An aspiring programmer based out of South MS</p>
+
+        <div class="about-me__body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <img src="images/" alt="Kenny Tran" class="about-me__img">
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+        <h2 class="section__title">My work</h2>
+        <p class="section__subtitle"></p>
+
+        <div class="portfolio">
+            <!-- Portfolio item 01 -->
+            <a href="#" class="portfolio__item">
+                <img src="images/portfolio1.png" alt="" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio item 02 -->
+            <a href="#" class="portfolio__item">
+                <img src="images/portfolio2.png" alt="" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio item 03 -->
+            <a href="#" class="portfolio__item">
+                <img src="images/portfolio3.png" alt="" class="portfolio__img">
+            </a>
+
+            <!--add more here-->
+            <!-- Portfolio item 04 -->
+            <a href="#" class="portfolio__item">
+                <img src="img/portfolio-04.jpg" alt="" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio item 05 -->
+            <a href="#" class="portfolio__item">
+                <img src="img/portfolio-05.jpg" alt="" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio item 06 -->
+            <a href="#" class="portfolio__item">
+                <img src="img/portfolio-06.jpg" alt="" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio item 07 -->
+            <a href="#" class="portfolio__item">
+                <img src="img/portfolio-07.jpg" alt="" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio item 08 -->
+            <a href="#" class="portfolio__item">
+                <img src="img/portfolio-08.jpg" alt="" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio item 09 -->
+            <a href="#" class="portfolio__item">
+                <img src="img/portfolio-09.jpg" alt="" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio item 0 0-->
+            <a href="#" class="portfolio__item">
+                <img src="img/portfolio-10.jpg" alt="" class="portfolio__img">
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <!-- replace with your own email address -->
+        <a href="mailto:kenny.tran09blx@gmail.com" class="footer__link">MY EMAIL</a>
+        <ul class="social-list">
+            <li class="social-list__item"><a class="social-list__link" href="https://codepen.io">a</a></li>
+            <li class="social-list__item">b<a class="social-list__link" href="http://dribbble.com"></a></li>
+            <li class="social-list__item"><a class="social-list__link" href="https://twitter.com">c</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="https://github.com">d</a></li>
+        </ul>
+    </footer>
+</body>
 </html>
