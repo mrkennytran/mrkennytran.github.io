@@ -37,6 +37,7 @@
 
 /* General styles */
 html{
+    /*smooth transition down webpage when clicking link*/
     scroll-behavior: smooth;
 }
 
